@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Calculadora de costo de vida para Estados Unidos y México</title>
-  <meta name="description" content="Compara presupuestos mensuales entre ciudades de Estados Unidos y México con una estimación simple." />
+  <title>Calculadora de costo de vida: Estados Unidos y México</title>
+  <meta name="description" content="Calculadora gratuita de costo de vida y guías para comparar ciudades de Estados Unidos y México. Estima tu presupuesto mensual fácilmente." />
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
+
 <header>
   <div class="container nav">
     <div class="navlinks">
       <a href="/es/" class="badge">Cost tools</a>
       <a href="/es/calculator.html">Calculadora</a>
+      <a href="/es/es-mas-barato-vivir-en-mexico-que-en-estados-unidos.html">Guías</a>
       <a href="/es/privacy.html">Privacidad</a>
       <a href="/es/terms.html">Términos</a>
       <a href="/es/contact.html">Contacto</a>
@@ -25,26 +27,76 @@
 </header>
 
 <main class="container">
-  <h1>Herramientas de costo de vida</h1>
-  <p>Estimaciones rápidas para comparar presupuestos mensuales entre ciudades de Estados Unidos y México.</p>
+
+  <h1>Calculadora de costo de vida</h1>
+  <p>
+    Compara presupuestos mensuales entre Estados Unidos y México.
+    Usa nuestra calculadora gratuita y guías prácticas.
+  </p>
 
   <div class="card">
-    <h2>Empieza aquí</h2>
-    <p>Usa la calculadora para estimar cómo se vería tu presupuesto mensual en otra ciudad.</p>
-    <p><a href="/es/calculator.html"><button>Abrir la calculadora</button></a></p>
+    <h2>Usa la calculadora</h2>
+    <p>
+      Estima cómo se vería tu presupuesto mensual actual en otra ciudad.
+    </p>
+    <p>
+      <a href="/es/calculator.html">
+        <button>Abrir la calculadora</button>
+      </a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Guía popular</h2>
+    <p>
+      <a href="/es/es-mas-barato-vivir-en-mexico-que-en-estados-unidos.html">
+        ¿Es más barato vivir en México que en Estados Unidos?
+      </a>
+    </p>
+    <p class="small">
+      Vivienda, comida, transporte y costos ocultos.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Comparación destacada</h2>
+    <p>
+      <a href="/es/cdmx-vs-nueva-york-costo-de-vida.html">
+        CDMX vs Nueva York: costo de vida
+      </a>
+    </p>
+    <p class="small">
+      Comparación por categorías y escenarios de presupuesto.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Más comparaciones pronto</h2>
+    <ul>
+      <li>Texas vs Monterrey</li>
+      <li>Los Ángeles vs Guadalajara</li>
+      <li>Miami vs Cancún</li>
+    </ul>
   </div>
 
   <div class="card">
     <h2>Espacio para anuncios</h2>
-    <div class="ad-slot">Los anuncios aparecerán aquí después de la aprobación de AdSense.</div>
+    <div class="ad-slot">
+      Los anuncios aparecerán aquí después de la aprobación de AdSense.
+    </div>
   </div>
+
 </main>
 
 <footer class="footer">
-  <div class="container">© <span id="y"></span> Cost tools</div>
+  <div class="container">
+    © <span id="year"></span> Cost tools
+  </div>
 </footer>
+
 <script>
-  document.getElementById("y").textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>

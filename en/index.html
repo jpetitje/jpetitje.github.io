@@ -4,10 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cost of living calculator for USA and Mexico</title>
-  <meta name="description" content="Compare monthly budgets between US and Mexico cities. Free cost of living calculator and practical guides." />
+  <meta name="description" content="Free cost of living calculator and guides comparing US and Mexico cities. Estimate your monthly budget easily." />
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
+
 <header>
   <div class="container nav">
     <div class="navlinks">
@@ -26,12 +27,18 @@
 </header>
 
 <main class="container">
+
   <h1>Cost of living calculator</h1>
-  <p>Free tools and practical guides to compare monthly budgets between US and Mexico cities.</p>
+  <p>
+    Compare monthly budgets between United States and Mexico cities.
+    Use our free calculator and practical guides.
+  </p>
 
   <div class="card">
     <h2>Use the calculator</h2>
-    <p>Estimate what your current monthly budget would look like in another city.</p>
+    <p>
+      Estimate what your current monthly budget would look like in another city.
+    </p>
     <p>
       <a href="/en/calculator.html">
         <button>Open the calculator</button>
@@ -42,41 +49,53 @@
   <div class="card">
     <h2>Popular guide</h2>
     <p>
-      Thinking about moving? Start here:
-    </p>
-    <p>
       <a href="/en/is-mexico-cheaper-than-us.html">
         Is Mexico cheaper than the US?
       </a>
     </p>
     <p class="small">
-      We break down housing, services, food, and hidden costs.
+      We break down housing, food, transport, and hidden costs.
     </p>
   </div>
 
   <div class="card">
-    <h2>Coming next</h2>
+    <h2>Featured comparison</h2>
+    <p>
+      <a href="/en/mexico-city-vs-new-york.html">
+        Mexico City vs New York cost of living
+      </a>
+    </p>
+    <p class="small">
+      Detailed comparison and monthly budget scenarios.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>More comparisons coming soon</h2>
     <ul>
-      <li>New York vs Mexico City cost comparison</li>
-      <li>Texas vs Monterrey monthly budget</li>
-      <li>Living costs in Guadalajara</li>
+      <li>Texas vs Monterrey</li>
+      <li>Los Angeles vs Guadalajara</li>
+      <li>Miami vs Cancún</li>
     </ul>
   </div>
 
   <div class="card">
     <h2>Ad slot placeholder</h2>
-    <div class="ad-slot">Ads will appear here after AdSense approval.</div>
+    <div class="ad-slot">
+      Ads will appear here after AdSense approval.
+    </div>
   </div>
+
 </main>
 
 <footer class="footer">
   <div class="container">
-    © <span id="y"></span> Cost tools
+    © <span id="year"></span> Cost tools
   </div>
 </footer>
 
 <script>
-  document.getElementById("y").textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>

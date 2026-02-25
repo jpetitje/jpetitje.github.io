@@ -5,6 +5,7 @@
   --muted: #555;
   --bg: #fff;
   --card: #fafafa;
+  --soft: #f4f4f4;
 }
 
 *{ box-sizing:border-box; }
@@ -13,11 +14,16 @@ body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--text);
   background:var(--bg);
-  line-height:1.5;
+  line-height:1.55;
 }
+a{ color:inherit; }
 header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
   border-bottom:1px solid var(--border);
-  background:#fff;
+  background:rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
 }
 .container{
   max-width:var(--max);
@@ -32,7 +38,6 @@ header{
   flex-wrap:wrap;
 }
 .nav a{
-  color:inherit;
   text-decoration:none;
 }
 .navlinks{
@@ -48,18 +53,21 @@ header{
 }
 .badge{
   font-size:12px;
-  padding:4px 8px;
+  padding:6px 10px;
   border:1px solid var(--border);
   border-radius:999px;
   background:#fff;
 }
 main{ padding:22px 0; }
-h1,h2{ margin:0 0 10px 0; }
+h1{ margin:0 0 10px 0; font-size:32px; letter-spacing:-0.02em; }
+h2{ margin:0 0 10px 0; font-size:18px; }
+h3{ margin:0 0 8px 0; font-size:16px; }
 p{ margin:0 0 12px 0; color:var(--muted); }
+
 .card{
   border:1px solid var(--border);
   background:var(--card);
-  border-radius:12px;
+  border-radius:14px;
   padding:16px;
   margin:14px 0;
 }
@@ -71,6 +79,22 @@ p{ margin:0 0 12px 0; color:var(--muted); }
 @media (max-width: 780px){
   .grid{ grid-template-columns: 1fr; }
 }
+
+.hero{
+  border:1px solid var(--border);
+  background: linear-gradient(180deg, var(--soft), #fff);
+  border-radius:18px;
+  padding:18px;
+  margin:14px 0;
+}
+.hero p{ color:var(--muted); }
+.hero-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+
 label{
   display:block;
   font-size:14px;
@@ -81,19 +105,21 @@ input, select{
   width:100%;
   padding:10px 12px;
   border:1px solid var(--border);
-  border-radius:10px;
+  border-radius:12px;
   font-size:16px;
+  background:#fff;
 }
 button{
   padding:10px 14px;
   border:1px solid var(--border);
-  border-radius:10px;
+  border-radius:12px;
   background:#fff;
   font-size:16px;
   cursor:pointer;
 }
+button:hover{ background:#f7f7f7; }
 .result{
-  font-size:18px;
+  font-size:20px;
   color:var(--text);
 }
 .small{
@@ -110,11 +136,11 @@ button{
   border-left:4px solid var(--border);
   padding:10px 12px;
   background:#fff;
-  border-radius:10px;
+  border-radius:12px;
 }
 .ad-slot{
   border:1px dashed var(--border);
-  border-radius:12px;
+  border-radius:14px;
   padding:18px;
   text-align:center;
   color:var(--muted);

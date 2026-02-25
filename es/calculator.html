@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculadora de costo de vida</title>
+  <meta name="description" content="Estima tu presupuesto mensual en otra ciudad comparando índices simplificados." />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <script defer src="/assets/app.js"></script>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="navlinks">
+      <a href="/es/" class="badge">Cost tools</a>
+      <a href="/es/calculator.html">Calculadora</a>
+      <a href="/es/privacy.html">Privacidad</a>
+      <a href="/es/terms.html">Términos</a>
+      <a href="/es/contact.html">Contacto</a>
+    </div>
+    <div class="lang">
+      <a class="badge" href="/en/calculator.html">EN</a>
+      <span class="badge">ES</span>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Calculadora de costo de vida</h1>
+  <p>Estimación simple. Puedes reemplazar los índices con datos reales más adelante.</p>
+
+  <div class="card grid">
+    <div>
+      <h2>Tu ciudad actual</h2>
+
+      <label for="baseBudget">Presupuesto mensual</label>
+      <input id="baseBudget" type="number" inputmode="decimal" placeholder="ej. 3000" />
+
+      <label for="baseCurrency">Moneda del presupuesto</label>
+      <select id="baseCurrency">
+        <option value="USD">USD</option>
+        <option value="MXN">MXN</option>
+      </select>
+
+      <label for="baseCountry">País</label>
+      <select id="baseCountry">
+        <option value="US">Estados Unidos</option>
+        <option value="MX">México</option>
+      </select>
+
+      <label for="baseCity">Ciudad</label>
+      <select id="baseCity"></select>
+    </div>
+
+    <div>
+      <h2>Ciudad objetivo</h2>
+
+      <label for="targetCountry">País</label>
+      <select id="targetCountry">
+        <option value="MX">México</option>
+        <option value="US">Estados Unidos</option>
+      </select>
+
+      <label for="targetCity">Ciudad</label>
+      <select id="targetCity"></select>
+
+      <label for="targetCurrency">Mostrar resultado en</label>
+      <select id="targetCurrency">
+        <option value="USD">USD</option>
+        <option value="MXN">MXN</option>
+      </select>
+
+      <label for="usdMxnRate">Tipo de cambio (1 USD en MXN)</label>
+      <input id="usdMxnRate" type="number" inputmode="decimal" value="17" />
+
+      <div class="card" style="margin-top:14px;">
+        <div class="small">Presupuesto mensual equivalente estimado</div>
+        <div id="output" class="result"></div>
+        <div id="details" class="small" style="margin-top:6px;"></div>
+      </div>
+
+      <div class="notice small">
+        Aviso: estimación solamente. No es asesoría financiera.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Espacio para anuncios</h2>
+    <div class="ad-slot">Los anuncios aparecerán aquí después de la aprobación de AdSense.</div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="y"></span> Cost tools</div>
+</footer>
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

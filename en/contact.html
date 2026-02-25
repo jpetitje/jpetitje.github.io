@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="navlinks">
+      <a href="/en/" class="badge">Cost tools</a>
+      <a href="/en/calculator.html">Calculator</a>
+      <a href="/en/privacy.html">Privacy</a>
+      <a href="/en/terms.html">Terms</a>
+      <a href="/en/contact.html">Contact</a>
+    </div>
+    <div class="lang">
+      <span class="badge">EN</span>
+      <a class="badge" href="/es/contact.html">ES</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Contact</h1>
+  <div class="card">
+    <p class="small">Replace the email below with yours.</p>
+    <p><a href="mailto:youremail@example.com"><button>Email us</button></a></p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="y"></span> Cost tools</div>
+</footer>
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

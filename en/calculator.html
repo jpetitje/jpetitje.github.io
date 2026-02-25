@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cost of living calculator</title>
+  <meta name="description" content="Estimate your monthly budget in another city by comparing simplified cost indices." />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <script defer src="/assets/app.js"></script>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="navlinks">
+      <a href="/en/" class="badge">Cost tools</a>
+      <a href="/en/calculator.html">Calculator</a>
+      <a href="/en/privacy.html">Privacy</a>
+      <a href="/en/terms.html">Terms</a>
+      <a href="/en/contact.html">Contact</a>
+    </div>
+    <div class="lang">
+      <span class="badge">EN</span>
+      <a class="badge" href="/es/calculator.html">ES</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Cost of living calculator</h1>
+  <p>Simple MVP estimator. Replace indices with real data later.</p>
+
+  <div class="card grid">
+    <div>
+      <h2>Your current city</h2>
+
+      <label for="baseBudget">Monthly budget</label>
+      <input id="baseBudget" type="number" inputmode="decimal" placeholder="e.g. 3000" />
+
+      <label for="baseCurrency">Budget currency</label>
+      <select id="baseCurrency">
+        <option value="USD">USD</option>
+        <option value="MXN">MXN</option>
+      </select>
+
+      <label for="baseCountry">Country</label>
+      <select id="baseCountry">
+        <option value="US">United States</option>
+        <option value="MX">Mexico</option>
+      </select>
+
+      <label for="baseCity">City</label>
+      <select id="baseCity"></select>
+    </div>
+
+    <div>
+      <h2>Target city</h2>
+
+      <label for="targetCountry">Country</label>
+      <select id="targetCountry">
+        <option value="MX">Mexico</option>
+        <option value="US">United States</option>
+      </select>
+
+      <label for="targetCity">City</label>
+      <select id="targetCity"></select>
+
+      <label for="targetCurrency">Show result in</label>
+      <select id="targetCurrency">
+        <option value="USD">USD</option>
+        <option value="MXN">MXN</option>
+      </select>
+
+      <label for="usdMxnRate">FX rate (1 USD in MXN)</label>
+      <input id="usdMxnRate" type="number" inputmode="decimal" value="17" />
+
+      <div class="card" style="margin-top:14px;">
+        <div class="small">Estimated equivalent monthly budget</div>
+        <div id="output" class="result"></div>
+        <div id="details" class="small" style="margin-top:6px;"></div>
+      </div>
+
+      <div class="notice small">
+        Disclaimer: estimate only. Not financial advice.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Ad slot placeholder</h2>
+    <div class="ad-slot">Ads will appear here after AdSense approval.</div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="y"></span> Cost tools</div>
+</footer>
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

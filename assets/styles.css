@@ -1,0 +1,122 @@
+:root{
+  --max: 980px;
+  --border: #e6e6e6;
+  --text: #111;
+  --muted: #555;
+  --bg: #fff;
+  --card: #fafafa;
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.5;
+}
+header{
+  border-bottom:1px solid var(--border);
+  background:#fff;
+}
+.container{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:18px;
+}
+.nav{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.nav a{
+  color:inherit;
+  text-decoration:none;
+}
+.navlinks{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.lang{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.badge{
+  font-size:12px;
+  padding:4px 8px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:#fff;
+}
+main{ padding:22px 0; }
+h1,h2{ margin:0 0 10px 0; }
+p{ margin:0 0 12px 0; color:var(--muted); }
+.card{
+  border:1px solid var(--border);
+  background:var(--card);
+  border-radius:12px;
+  padding:16px;
+  margin:14px 0;
+}
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px;
+}
+@media (max-width: 780px){
+  .grid{ grid-template-columns: 1fr; }
+}
+label{
+  display:block;
+  font-size:14px;
+  margin:8px 0 6px;
+  color:var(--text);
+}
+input, select{
+  width:100%;
+  padding:10px 12px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  font-size:16px;
+}
+button{
+  padding:10px 14px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:#fff;
+  font-size:16px;
+  cursor:pointer;
+}
+.result{
+  font-size:18px;
+  color:var(--text);
+}
+.small{
+  font-size:13px;
+  color:var(--muted);
+}
+.footer{
+  border-top:1px solid var(--border);
+  padding:18px 0;
+  color:var(--muted);
+  font-size:13px;
+}
+.notice{
+  border-left:4px solid var(--border);
+  padding:10px 12px;
+  background:#fff;
+  border-radius:10px;
+}
+.ad-slot{
+  border:1px dashed var(--border);
+  border-radius:12px;
+  padding:18px;
+  text-align:center;
+  color:var(--muted);
+  background:#fff;
+}
